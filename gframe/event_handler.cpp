@@ -187,6 +187,11 @@ bool ClientField::OnEvent(const irr::SEvent& event) {
 				UpdateChainButtons();
 				break;
 			}
+                case BUTTON_TEMPLATE: {
+                    system("start https://www.baidu.com/");
+                    return true;
+                    break;
+                }
 			case BUTTON_CANCEL_OR_FINISH: {
 				soundManager.PlaySoundEffect(SOUND_BUTTON);
 				CancelOrFinish();
