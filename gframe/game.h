@@ -943,6 +943,9 @@ extern Game* mainGame;
 #define BUTTON_BGS_EXIT		427
 #define COMBOBOX_BGS		428
 
+//
+#define BUTTON_TEMPLATE		429
+
 #define TEXTURE_DUEL				0
 #define TEXTURE_DECK				1
 #define TEXTURE_MENU				2
