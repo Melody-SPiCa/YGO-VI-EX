@@ -363,6 +363,7 @@ public:
 	irr::gui::IGUIButton* btnYST;
 	irr::gui::IGUIButton* btnMJ;
 	irr::gui::IGUIButton* btnDV;
+	irr::gui::IGUIButton* btnTEMP;
 	//system setting
 	irr::gui::IGUIWindow* wSystem;
 	irr::gui::IGUICheckBox* chkMRandom;

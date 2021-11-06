@@ -72,6 +72,7 @@ bool MenuHandler::OnEvent(const irr::SEvent& event) {
 				mainGame->btnYST->setEnabled(true);
 				mainGame->btnMJ->setEnabled(true);
 				mainGame->btnDV->setEnabled(true);
+				mainGame->btnTEMP->setEnabled(true);
 				mainGame->btnOtherExit->setEnabled(true);
 				mainGame->HideElement(mainGame->wMainMenu);
 				mainGame->ShowElement(mainGame->wOther);
