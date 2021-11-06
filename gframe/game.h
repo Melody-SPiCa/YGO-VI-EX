@@ -911,6 +911,7 @@ extern Game* mainGame;
 #define BUTTON_RMAI						518
 #define BUTTON_RMA						519
 #define BUTTON_RM_EXIT					520
+#define BUTTON_TEMPLATE					521
 
 #define BUTTON_SYS						406
 #define BUTTON_SYS_EXIT					407
@@ -942,9 +943,6 @@ extern Game* mainGame;
 #define BUTTON_BGS_OK3		426
 #define BUTTON_BGS_EXIT		427
 #define COMBOBOX_BGS		428
-
-//
-#define BUTTON_TEMPLATE		429
 
 #define TEXTURE_DUEL				0
 #define TEXTURE_DECK				1
