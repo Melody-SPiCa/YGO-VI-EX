@@ -154,7 +154,8 @@ bool Game::Initialize() {
 	btnYST = env->addButton(rect<s32>(10, 380, 270, 410), wOther, BUTTON_YST, dataManager.GetSysString(1536));
 	btnMJ = env->addButton(rect<s32>(10, 415, 270, 445), wOther, BUTTON_MJ, dataManager.GetSysString(1513));
 	btnDV = env->addButton(rect<s32>(10, 450, 270, 480), wOther, BUTTON_DV, dataManager.GetSysString(1537));
-	btnOtherExit = env->addButton(rect<s32>(10, 485, 270, 515), wOther, BUTTON_OTHER_EXIT, dataManager.GetSysString(1210));
+	btnTEMP = env->addButton(rect<s32>(10, 485, 270, 515), wOther, BUTTON_TEMP, dataManager.GetSysString(1626));
+	btnOtherExit = env->addButton(rect<s32>(10, 520, 270, 550), wOther, BUTTON_OTHER_EXIT, dataManager.GetSysString(1210));
 	//system setting
 	wSystem = env->addWindow(rect<s32>(212, 140, 812, 360), false, dataManager.GetSysString(1207));
 	wSystem->getCloseButton()->setVisible(false);
@@ -922,7 +923,6 @@ bool Game::Initialize() {
 	btnChainIgnore = env->addButton(rect<s32>(205, 100, 295, 135), 0, BUTTON_CHAIN_IGNORE, dataManager.GetSysString(1292));
     btnChainAlways = env->addButton(rect<s32>(205, 140, 295, 175), 0, BUTTON_CHAIN_ALWAYS, dataManager.GetSysString(1293));
     btnChainWhenAvail = env->addButton(rect<s32>(205, 180, 295, 215), 0, BUTTON_CHAIN_WHENAVAIL, dataManager.GetSysString(1294));
-    btnTEMP = env->addButton(rect<s32>(205, 220, 295, 255), wOther, BUTTON_TEMPLATE, dataManager.GetSysString(1626));
     btnChainIgnore->setIsPushButton(true);
 	btnChainAlways->setIsPushButton(true);
 	btnChainWhenAvail->setIsPushButton(true);

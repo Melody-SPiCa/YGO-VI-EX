@@ -363,6 +363,7 @@ public:
 	irr::gui::IGUIButton* btnYST;
 	irr::gui::IGUIButton* btnMJ;
 	irr::gui::IGUIButton* btnDV;
+    irr::gui::IGUIButton* btnTEMP;
 	//system setting
 	irr::gui::IGUIWindow* wSystem;
 	irr::gui::IGUICheckBox* chkMRandom;
@@ -670,7 +671,6 @@ public:
 	irr::gui::IGUIButton* btnChainIgnore;
 	irr::gui::IGUIButton* btnChainAlways;
 	irr::gui::IGUIButton* btnChainWhenAvail;
-	irr::gui::IGUIButton* btnTEMP;
 	//cancel or finish
 	irr::gui::IGUIButton* btnCancelOrFinish;
 	//fortune
