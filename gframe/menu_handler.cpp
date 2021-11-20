@@ -78,6 +78,7 @@ namespace ygo {
                                 mainGame->btnYST->setEnabled(true);
                                 mainGame->btnMJ->setEnabled(true);
                                 mainGame->btnDV->setEnabled(true);
+                                // ----- [卡组模板]
                                 mainGame->btnTEMP->setEnabled(true);
                                 mainGame->btnOtherExit->setEnabled(true);
                                 mainGame->HideElement(mainGame->wMainMenu);

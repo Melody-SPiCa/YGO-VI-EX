@@ -558,7 +558,7 @@ bool ClientField::OnEvent(const irr::SEvent& event) {
 					mainGame->wCardSelect->setText(formatBuffer);
 					break;
 				}
-				case LOCATION_GRAVE: {
+                    case LOCATION_GRAVE: {
 					for(int32 i = (int32)grave[command_controler].size() - 1; i >= 0 ; --i)
 						selectable_cards.push_back(grave[command_controler][i]);
 					myswprintf(formatBuffer, L"%ls(%d)", dataManager.GetSysString(1004), grave[command_controler].size());
