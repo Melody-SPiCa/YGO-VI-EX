@@ -676,6 +676,7 @@ public:
 	irr::gui::IGUIButton* btnCancelOrFinish;
 	//fortune
 	irr::gui::IGUIWindow* wDV;
+	irr::gui::IGUIWindow* wTEMP;
 	irr::gui::IGUIImage* imgDV;
 	irr::gui::IGUIButton* btnDVClose;
 };

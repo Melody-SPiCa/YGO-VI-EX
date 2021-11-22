@@ -237,6 +237,16 @@ bool Game::Initialize() {
 	wDV->setDrawTitlebar(false);
 	wDV->setDrawBackground(false);
 	wDV->setVisible(false);
+
+    // ----- [卡组模板.窗口] -----
+    wTEMP = env->addWindow(rect<s32>(35, 140, 635, 770), false, L"");
+    wTEMP->getCloseButton()->setVisible(false);
+    wTEMP->setDrawTitlebar(false);
+    wTEMP->setDrawBackground(false);
+    wTEMP->setVisible(false);
+    btnTEMPClose = env->addButton(rect<s32>(65, 630, 365, 670), wTEMP, BUTTON_TEMP_CLOSE, dataManager.GetSysString(1210));
+    // ----- [卡组模板.窗口] -----
+
 	imgDV = env->addImage(rect<s32>(0, 0, 430, 625), wDV);
 	imgDV->setImage(imageManager.tDV);
 	imgDV->setScaleImage(false);

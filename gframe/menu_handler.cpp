@@ -53,6 +53,8 @@ namespace ygo {
                     break;
                 if (mainGame->wDV->isVisible() && id != BUTTON_DV_CLOSE)
                     break;
+                if (mainGame->wTEMP->isVisible() && id != BUTTON_DV_CLOSE)
+                    break;
                 switch (event.GUIEvent.EventType) {
                     case irr::gui::EGET_BUTTON_CLICKED: {
                         if (id < 110)
@@ -97,6 +99,17 @@ namespace ygo {
                             }
                             case BUTTON_DV_CLOSE: {
                                 mainGame->HideElement(mainGame->wDV);
+                                if (exit_on_return)
+                                    mainGame->device->closeDevice();
+                                break;
+                            }
+                            case BUTTON_TEMP: {
+                                mainGame->btnDVClose->setEnabled(true);
+                                mainGame->ShowElement(mainGame->wTEMP);
+                                break;
+                            }
+                            case BUTTON_TEMP_CLOSE: {
+                                mainGame->HideElement(mainGame->wTEMP);
                                 if (exit_on_return)
                                     mainGame->device->closeDevice();
                                 break;
@@ -160,11 +173,6 @@ namespace ygo {
                             }
                             case BUTTON_MJ: {
                                 system("start https://www.resdiy.com/");
-                                return true;
-                                break;
-                            }
-                            case BUTTON_TEMP: {
-                                system("start https://www.baidu.com/");
                                 return true;
                                 break;
                             }
