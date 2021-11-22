@@ -103,6 +103,7 @@ namespace ygo {
                                     mainGame->device->closeDevice();
                                 break;
                             }
+                            // ----- [卡组模板.窗口] -----
                             case BUTTON_TEMP: {
                                 mainGame->btnTEMPClose->setEnabled(true);
                                 mainGame->ShowElement(mainGame->wTEMP);
@@ -114,6 +115,7 @@ namespace ygo {
                                     mainGame->device->closeDevice();
                                 break;
                             }
+                            // ----- [卡组模板.窗口] -----
                             case BUTTON_TAKEOUT1: {
                                 system("start https://www.4008123123.com/");
                                 return true;
