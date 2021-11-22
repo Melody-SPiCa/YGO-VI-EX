@@ -53,7 +53,7 @@ namespace ygo {
                     break;
                 if (mainGame->wDV->isVisible() && id != BUTTON_DV_CLOSE)
                     break;
-                if (mainGame->wTEMP->isVisible() && id != BUTTON_DV_CLOSE)
+                if (mainGame->wTEMP->isVisible() && id != BUTTON_TEMP_CLOSE)
                     break;
                 switch (event.GUIEvent.EventType) {
                     case irr::gui::EGET_BUTTON_CLICKED: {
