@@ -678,7 +678,7 @@ public:
 	irr::gui::IGUIWindow* wDV;
 	irr::gui::IGUIImage* imgDV;
 	irr::gui::IGUIButton* btnDVClose;
-        // ----- [卡组模板.窗口] -----
+    // ----- [卡组模板.窗口] -----
     irr::gui::IGUIWindow* wTEMP;
     irr::gui::IGUIImage* imgTEMP;
 	irr::gui::IGUIButton* btnTEMPClose;
