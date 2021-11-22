@@ -676,10 +676,11 @@ public:
 	irr::gui::IGUIButton* btnCancelOrFinish;
 	//fortune
 	irr::gui::IGUIWindow* wDV;
-    // ----- [卡组模板.窗口] -----
-	irr::gui::IGUIWindow* wTEMP;
 	irr::gui::IGUIImage* imgDV;
 	irr::gui::IGUIButton* btnDVClose;
+        // ----- [卡组模板.窗口] -----
+    irr::gui::IGUIWindow* wTEMP;
+    irr::gui::IGUIImage* imgTEMP;
 	irr::gui::IGUIButton* btnTEMPClose;
 };
 

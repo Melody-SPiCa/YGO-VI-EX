@@ -237,21 +237,26 @@ bool Game::Initialize() {
 	wDV->setDrawTitlebar(false);
 	wDV->setDrawBackground(false);
 	wDV->setVisible(false);
+    imgDV = env->addImage(rect<s32>(0, 0, 430, 625), wDV);
+    imgDV->setImage(imageManager.tDV);
+    imgDV->setScaleImage(false);
+    imgDV->setUseAlphaChannel(true);
+    btnDVClose = env->addButton(rect<s32>(65, 630, 365, 670), wDV, BUTTON_DV_CLOSE, dataManager.GetSysString(1210));
 
     // ----- [卡组模板.窗口] -----
-    wTEMP = env->addWindow(rect<s32>(35, 140, 635, 770), false, L"");
+    wTEMP = env->addWindow(rect<s32>(35, 70, 935, 770), false, L"");
     wTEMP->getCloseButton()->setVisible(false);
     wTEMP->setDrawTitlebar(false);
     wTEMP->setDrawBackground(false);
     wTEMP->setVisible(false);
+    imgTEMP = env->addImage(rect<s32>(0, 0, 430, 625), wTEMP);
+    imgTEMP->setImage(imageManager.tDV);
+    imgTEMP->setScaleImage(false);
+    imgTEMP->setUseAlphaChannel(true);
     btnTEMPClose = env->addButton(rect<s32>(65, 630, 365, 670), wTEMP, BUTTON_TEMP_CLOSE, dataManager.GetSysString(1210));
     // ----- [卡组模板.窗口] -----
 
-	imgDV = env->addImage(rect<s32>(0, 0, 430, 625), wDV);
-	imgDV->setImage(imageManager.tDV);
-	imgDV->setScaleImage(false);
-	imgDV->setUseAlphaChannel(true);
-	btnDVClose = env->addButton(rect<s32>(65, 630, 365, 670), wDV, BUTTON_DV_CLOSE, dataManager.GetSysString(1210));
+
 	//lan mode
 	wLanWindow = env->addWindow(rect<s32>(220, 100, 800, 520), false, dataManager.GetSysString(1200));
 	wLanWindow->getCloseButton()->setVisible(false);
