@@ -679,6 +679,7 @@ public:
 	irr::gui::IGUIWindow* wTEMP;
 	irr::gui::IGUIImage* imgDV;
 	irr::gui::IGUIButton* btnDVClose;
+	irr::gui::IGUIButton* btnTEMPClose;
 };
 
 extern Game* mainGame;
@@ -915,6 +916,7 @@ extern Game* mainGame;
 #define BUTTON_RMA						519
 #define BUTTON_RM_EXIT					520
 #define BUTTON_TEMP   					521
+#define BUTTON_TEMP_CLOSE   			522
 
 #define BUTTON_SYS						406
 #define BUTTON_SYS_EXIT					407

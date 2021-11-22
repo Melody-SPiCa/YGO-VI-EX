@@ -104,7 +104,7 @@ namespace ygo {
                                 break;
                             }
                             case BUTTON_TEMP: {
-                                mainGame->btnDVClose->setEnabled(true);
+                                mainGame->btnTEMPClose->setEnabled(true);
                                 mainGame->ShowElement(mainGame->wTEMP);
                                 break;
                             }
